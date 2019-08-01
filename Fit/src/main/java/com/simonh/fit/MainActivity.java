@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 drawer.closeDrawers();
                 break;
             case R.id.nav_about:
-                Toast.makeText(this, "This is the about FYCK THIS BULLSHIT", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "This is the about page info", Toast.LENGTH_LONG).show();
                 drawer.closeDrawers();
                 break;
         }
