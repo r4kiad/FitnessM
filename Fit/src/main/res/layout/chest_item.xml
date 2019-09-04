@@ -18,26 +18,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
             android:text="Line 1"
             android:textColor="@android:color/black"
-            android:layout_marginTop="8dp"
             android:textSize="10sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/mbtn"
-            android:layout_width="42dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@id/weightdisplay"
-            android:text="-"
-            android:textSize="20dp" />
+        <!--<Button-->
+        <!--android:id="@+id/mbtn"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_toLeftOf="@id/weightdisplay"-->
+        <!--android:text="-"-->
+        <!--android:textSize="20dp" />-->
 
         <TextView
             android:id="@+id/weightdisplay"
             android:layout_width="40dp"
-            android:layout_height="50dp"
+            android:layout_height="26dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="8dp"
@@ -46,30 +46,42 @@
             android:textColor="@android:color/black"
             android:textSize="10sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/lb"
-            android:layout_width="20dp"
-            android:layout_height="50dp"
+            android:layout_width="22dp"
+            android:layout_height="26dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="58dp"
+            android:layout_marginRight="56dp"
             android:text="lb"
             android:textColor="@android:color/black"
             android:textSize="10sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/pbtn"
+            android:id="@+id/setBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="8dp"
-            android:layout_toRightOf="@id/mbtn"
-            android:text="+"
-            android:textSize="20dp" />
+            android:layout_below="@+id/weightdisplay"
+            android:layout_alignEnd="@+id/weightdisplay"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-36dp"
+            android:text="Set"
+            android:textSize="10sp"
+            android:layout_alignRight="@+id/weightdisplay"
+            android:layout_marginRight="-36dp" />
 
-
+        <!--<Button-->
+        <!--android:id="@+id/pbtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_toRightOf="@id/mbtn"-->
+        <!--android:text="+"-->
+        <!--android:textSize="20dp" />-->
 
 
     </RelativeLayout>

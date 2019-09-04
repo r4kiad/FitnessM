@@ -7,32 +7,28 @@ public class ChestItem {
     private String workouName;
     private int weightNumber;
     private String lbLabel;
-    private Button plusBtn;
-    private Button minusBtn;
+    //private Button plusBtn;
+    //private Button minusBtn;
+    private Button setBtn;
 
-    ChestItem(String Wname, Button mBtn, int Wnumber, String lLabel, Button pBtn){
+    ChestItem(String Wname, Button setBtn, int Wnumber, String lLabel){
 
 
         workouName = Wname;
-        minusBtn = mBtn;
+        setBtn = this.setBtn;
         weightNumber = Wnumber;
         lbLabel = lLabel;
-        plusBtn = pBtn;
+
     }
     public String getWorkouName(){
         return workouName;
     }
-    public Button getMinusBtn(){
-        return minusBtn;
-    }
+    public Button getSetBtn(){return setBtn;}
     public int getWeightNumber(){
         return weightNumber;
     }
     public String getLbLabel(){
         return lbLabel;
-    }
-    public Button getPlusBtn(){
-        return plusBtn;
     }
     public void setWeightNumber(int weightNumber) {
         this.weightNumber = weightNumber;

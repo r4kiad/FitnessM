@@ -17,15 +17,15 @@ import com.simonh.fit.R;
 import java.util.ArrayList;
 
 public class ChestFragment extends Fragment {
-    Button mbtn;
-    Button pbtn;
+    Button setbtn;
+
     View v;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstancesState){
-
+        //inflate the chest box to the view
         v = inflater.inflate(R.layout.fragment_chest,container,false);
         //set recyclerview to the fragment
         final RecyclerView mRecyclerView = v.findViewById(R.id.recyclerViewChest);
@@ -36,12 +36,12 @@ public class ChestFragment extends Fragment {
         //array list of object chest item
         ArrayList<ChestItem> chestworkoutlist = new ArrayList<>();
 
-        chestworkoutlist.add(new ChestItem("Bench Press", mbtn, 0, "lb",pbtn));
-        chestworkoutlist.add(new ChestItem("Incline Bench Press", mbtn, 20, "lb",pbtn));
-        chestworkoutlist.add(new ChestItem("Chest Fly (Dumbbell)", mbtn, 100, "lb",pbtn));
-        chestworkoutlist.add(new ChestItem("Dumbbell Press", mbtn, 0, "lb",pbtn));
-        chestworkoutlist.add(new ChestItem("Cable Lower Chest Raise", mbtn, 0, "lb",pbtn));
-        chestworkoutlist.add(new ChestItem("Cable Fly", mbtn, 0, "lb",pbtn));
+        chestworkoutlist.add(new ChestItem("Bench Press", setbtn, 0, "lb"));
+        chestworkoutlist.add(new ChestItem("Incline Bench Press", setbtn, 20, "lb"));
+        chestworkoutlist.add(new ChestItem("Chest Fly (Dumbbell)", setbtn, 100, "lb"));
+        chestworkoutlist.add(new ChestItem("Dumbbell Press", setbtn, 0, "lb"));
+        chestworkoutlist.add(new ChestItem("Cable Lower Chest Raise", setbtn, 0, "lb"));
+        chestworkoutlist.add(new ChestItem("Cable Fly", setbtn, 0, "lb"));
 
 
         //initialize adapter and set it to this view so it display information
